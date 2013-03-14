@@ -7,9 +7,14 @@
         <span class="icon-bar"></span>
       </a>
 
-      <a class="brand" href="{{ root_url }}/">{{ site.title }}</a>
-
+      
+      <a class="brand" href="{{ root_url }}/">
+        <img src="images/nuigroup1.png"/>
+        {{ site.title }}
+      </a>      
+      
       <div class="nav-collapse">
+
         {% include custom/navigation.html %}
 
         <ul class="nav pull-right" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
